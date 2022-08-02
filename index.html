@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Port Folio</title>
+
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class="bx bxs-user" id="user" style="visibility:  hidden;"></i>
+      <div class="logo_name">Hello Viewer's<br> </div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="courses.html">
+          <i class="bx bx-laptop"></i>
+          <span class="links_name">Courses</span>
+        </a>
+        <span class="tooltip">Courses</span>
+      </li>
+      <li>
+        <a href="former_edu.html">
+          <i class="bx bx-book"></i>
+          <span class="links_name">Former Education</span>
+        </a>
+        <span class="tooltip">Former Education</span>
+      </li>
+
+      <li>
+        <a href="current_edu.html">
+          <i class="bx bxs-graduation"></i>
+          <span class="links_name">Current Education</span>
+        </a>
+        <span class="tooltip">Current Education</span>
+      </li>
+      <li>
+        <a href="project.html">
+          <i class="bx bx-bulb"></i>
+          <span class="links_name">Projects</span>
+        </a>
+        <span class="tooltip">Projects</span>
+      </li>
+      <li>
+        <a href="Achievement.html">
+          <i class="bx bx-trophy"></i>
+          <span class="links_name">Achievments</span>
+        </a>
+        <span class="tooltip">Achievments</span>
+      </li>
+      <li>
+        <a href="contact1.html">
+          <i class="bx bx-phone"></i>
+          <span class="links_name">Contact Details</span>
+        </a>
+        <span class="tooltip">Contact Details</span>
+      </li>
+
+      <!-- <li>
+        <a onclick="log()" style="cursor: pointer;">
+          <i class="bx bx-book"></i>
+                    <span class="links_name">Exit</span>
+        </a>
+        <span class="tooltip">Exit</span>
+      </li> -->
+
+
+    </ul>
+  </div>
+  <section class="home-section">
+    <h2>Hey, My Name is</h2>
+    <h1>SAURABH DESHBHRATAR</h1>
+    <p></P>
+    <button><a href="Saurabh_CV.png">cv</a></button>
+    <div class="image">
+      <img src="DSC_Portfolio.JPG" alt="" height="1000px" width="500px">
+    </div>
+
+  </section>
+
+
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      menuBtnChange();
+    });
+
+    searchBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      menuBtnChange();
+    });
+
+
+    function menuBtnChange() {
+      if (sidebar.classList.contains("open")) {
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        document.getElementById("user").style.visibility = "visible";
+      } else {
+        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        document.getElementById("user").style.visibility = "hidden";
+      }
+    }
+    function log() {
+      var r = confirm("Are You Sure Want To End Session ?");
+      if (r == true) {
+        location.replace("#");
+      }
+
+    }
+  </script>
+</body>
+
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+  * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 78px;
+    background: rgb(132, 124, 124);
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar.open {
+    width: 264px;
+  }
+
+  .sidebar .logo-details {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+
+  .home-section h2 {
+    padding-top: 150px;
+    margin-left: 340px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: rgb(177, 88, 14);
+    letter-spacing: 2px;
+    line-height: 25px;
+
+  }
+
+  .home-section h1 {
+    margin-left: 340px;
+    font-size: 25px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 70px;
+
+  }
+
+  .home-section p {
+
+    margin-left: 340px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+  }
+
+  .home-section button {
+    margin-top: 20px;
+    margin-left: 340px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    background-color: rgb(211, 37, 18);
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+
+  .home-section button:hover {
+    transform: scale(1.05);
+  }
+
+
+  .sidebar .logo-details .icon {
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar .logo-details .logo_name {
+    color: rgb(1, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar.open .logo-details .icon,
+  .sidebar.open .logo-details .logo_name {
+    opacity: 1;
+  }
+
+  .sidebar .logo-details #btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: all 0.4s ease;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar.open .logo-details #btn {
+    text-align: right;
+  }
+
+  .sidebar i {
+    color: rgb(143, 10, 10);
+    height: 60px;
+    min-width: 50px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .sidebar .nav-list {
+    margin-top: 20px;
+    height: 100%;
+  }
+
+  .sidebar li {
+
+    position: relative;
+    margin: 30px 0;
+    list-style: none;
+  }
+
+  .sidebar li .tooltip {
+
+    position: absolute;
+    top: -30px;
+    left: calc(100% + 15px);
+    z-index: 12;
+    background: rgb(249, 247, 247);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: 0s;
+  }
+
+  .sidebar li:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .sidebar.open li .tooltip {
+    display: none;
+  }
+
+  .sidebar input {
+    font-size: 15px;
+    color: #FFF;
+    font-weight: 400;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    width: 50px;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    background: #02010a;
+  }
+
+  .sidebar.open input {
+    padding: 0 20px 0 50px;
+    width: 100%;
+  }
+
+  .sidebar .bx-search {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background: #1d1b31;
+    color: #FFF;
+  }
+
+  .sidebar.open .bx-search:hover {
+    background: #1d1b31;
+    color: #FFF;
+  }
+
+
+  .sidebar li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: #11101D;
+  }
+
+  .sidebar li a:hover {
+    background: rgb(252, 245, 245);
+  }
+
+  .image img {
+    border: 2px solid gold;
+    background-color: red;
+    width: 16%;
+    height: 65%;
+    position: relative;
+    left: 900px;
+    position: absolute;
+    bottom: 135px;
+    margin: auto;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+
+  .sidebar li a .links_name {
+    color: rgb(120, 11, 11);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font: bolder;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+  }
+
+  .sidebar.open li a .links_name {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .sidebar li a:hover .links_name,
+  .sidebar li a:hover i {
+    transition: all 0.5s ease;
+
+  }
+
+  .sidebar li i {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+
+  .sidebar li img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+
+  .home-section {
+    background-color: #000;
+    background-repeat: no-repeat center;
+    background-size: cover;
+    /* position: relative; */
+    /* background: aqua; */
+    height: 100vh;
+    top: 0;
+    left: 80px;
+
+    transition: all 0.5s ease;
+    /* z-index: 2; */
+  }
+
+  .sidebar.open~.home-section {
+    left: 256px;
+    width: calc(100%);
+  }
+
+  .home-section .text {
+    display: inline-block;
+    color: #11101d;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 200px;
+    margin-right: 500px;
+  }
+
+  @media (max-width: 420px) {
+    .sidebar li .tooltip {
+      display: none;
+    }
+  }
+</style>

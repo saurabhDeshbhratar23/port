@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+section{
+	padding: 40px 15%;
+}
+.contact{
+	background: #101010;
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	align-items: center;
+	
+}
+.contact-form h1{
+	position: absolute;
+	top: 10%;
+    left: 38%;
+	font-size: 70px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+ .header1 h1{
+	position: absolute;
+    top:30%;
+	left:32%;
+    font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #f9004d;
+    letter-spacing: 3px;
+    line-height: 70px;
+    word-spacing: 6px;
+}
+
+.header2 h1{
+	position: absolute;
+    top:40%;
+	left:32%;
+	font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #f9004d;
+    letter-spacing: 3px;
+    line-height: 70px;
+    word-spacing: 6px;
+}
+.header3 h1{
+	position: absolute;
+    top:50%;
+	left:32%;
+	font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #f9004d;
+    letter-spacing: 3px;
+    line-height: 70px;
+    word-spacing: 6px;
+}
+.header4 h1{
+	position: absolute;
+    top:60%;
+	left:32%;
+	font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #f9004d;
+    letter-spacing: 3px;
+    line-height: 70px;
+    word-spacing: 6px;
+}
+.header5 h1{
+	position: absolute;
+    top:70%;
+	left:32%;
+	font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #f9004d;
+    letter-spacing: 3px;
+    line-height: 70px;
+    word-spacing: 6px;
+}
+span{
+    color:rgb(255, 255, 255) ;
+}
+.image{
+	flex:1 1 45rem;
+  }
+  
+  .image img{
+	width: 2.5%;
+	height: 6%;
+	position: relative;
+	left : 27.3%;
+    top: 32.5%;
+	position: absolute;
+	bottom: 360px;
+  }
+  .image1{
+	flex:1 1 45rem;
+  }
+  
+  .image1 img{
+	width: 2.5%;
+	height: 6%;
+	position: relative;
+	left :  27.3%;
+    top:42%;
+	position: absolute;
+	bottom: 310px;
+  }
+  .image2{
+	flex:1 1 45rem;
+  }
+  
+  .image2 img{
+	width: 2%;
+	height: 4.5%;
+	position: relative;
+	left :   27.5%;
+    top:53%;
+	position: absolute;
+	bottom: 270px;
+  }
+  .image3{
+	flex:1 1 45rem;
+  }
+  
+  .image3 img{
+	width: 2%;
+	height: 4%;
+	position: relative;
+	left :  27.5%;
+    top: 63%;
+	position: absolute;
+	bottom: 220px;
+  }
+  .image4{
+	flex:1 1 45rem;
+  }
+  
+  .image4 img{
+	width: 3%;
+	height: 5%;
+	position: relative;
+	left :  27%;
+    top: 73%;
+	position: absolute;
+	bottom: 220px;
+  }
